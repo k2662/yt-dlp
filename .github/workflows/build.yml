@@ -111,7 +111,7 @@ jobs:
           fetch-depth: 0  # Needed for changelog
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.13"
       - name: Install Requirements
         run: |
           sudo apt -y install zip pandoc man sed
@@ -406,7 +406,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.13"
       - name: Install Requirements
         run: | # Custom pyinstaller built with https://github.com/yt-dlp/pyinstaller-builds
           python devscripts/install_deps.py -o --include build
@@ -454,7 +454,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.13"
           architecture: "x86"
       - name: Install Requirements
         run: |
